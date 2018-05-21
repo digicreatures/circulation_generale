@@ -1,0 +1,116 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <variables>
+    <variable type="" id="4V2nL5f06mcRIyBKG+c!">opacity</variable>
+  </variables>
+  <block type="bindHTMLObject" id="4.{{*LLK83]:fxc]^B)r" x="-350" y="-870">
+    <field name="PARENT">FALSE</field>
+    <value name="ID">
+      <block type="text" id="JAxdFSb%.nn9dSX[Kn22">
+        <field name="TEXT">popup-quai</field>
+      </block>
+    </value>
+    <value name="OBJECTINPUT">
+      <block type="objectList" id="`O9iB[MQuqBhpc,#+*U)">
+        <field name="FIELDNAME">ANCHOR-quai</field>
+      </block>
+    </value>
+    <next>
+      <block type="bindHTMLObject" id="bw|0Q%qjb!:=as[(S5@E">
+        <field name="PARENT">FALSE</field>
+        <value name="ID">
+          <block type="text" id="}*l6W=`Fmpp12oFp`N(h">
+            <field name="TEXT">popup-parking-vl</field>
+          </block>
+        </value>
+        <value name="OBJECTINPUT">
+          <block type="objectList" id="%D.F%=zp+jJpV*[O0TR}">
+            <field name="FIELDNAME">ANCHOR-parking_vl</field>
+          </block>
+        </value>
+        <next>
+          <block type="bindHTMLObject" id="W})-^J*-?/s^|;78op#5">
+            <field name="PARENT">FALSE</field>
+            <value name="ID">
+              <block type="text" id="WWAtN%VZ*`V$SGM!g|kl">
+                <field name="TEXT">popup-zone-dechets</field>
+              </block>
+            </value>
+            <value name="OBJECTINPUT">
+              <block type="objectList" id="29.vh~$L?=RX:snC/[OP">
+                <field name="FIELDNAME">ANCHOR-zone_dechets</field>
+              </block>
+            </value>
+          </block>
+        </next>
+      </block>
+    </next>
+  </block>
+  <block type="text" id="XS.uX_:sW/BcbzjufEjy" x="-213" y="-824">
+    <field name="TEXT">popup-quai</field>
+  </block>
+  <block type="eventHTMLElem" id=";=XE#Y[O=z6?%?k[]TuV" x="-350" y="-730">
+    <field name="EVENT">click</field>
+    <field name="PARENT">FALSE</field>
+    <value name="ID">
+      <block type="text" id="!TkH?8MRFUF]rAC#*0ZV">
+        <field name="TEXT">anim-quai</field>
+      </block>
+    </value>
+    <statement name="DO">
+      <block type="setHTMLElemStyle" id="O3J4E21no1!hlc_pR%,b">
+        <field name="PROPERTY">display</field>
+        <field name="PARENT">FALSE</field>
+        <value name="VALUE">
+          <block type="text" id="!t)Y!a|{9q_BNyO=dA|v">
+            <field name="TEXT">none</field>
+          </block>
+        </value>
+        <value name="ID">
+          <block type="text" id=":Y2y#S7cVm2KC^?0wD^I">
+            <field name="TEXT">popup</field>
+          </block>
+        </value>
+        <next>
+          <block type="playAnimationExt" id="FQTCZn]VT/xfAG,iAL)~">
+            <field name="REVERSED">FALSE</field>
+            <value name="VALUE">
+              <block type="getAnimations" id="o22BUn!$M12=zm%{.M.}">
+                <value name="OBJECTINPUT">
+                  <block type="groupList" id="r7LIK?W.$hBjmb}F0_XO">
+                    <field name="FIELDNAME">Group-semi-remorque</field>
+                  </block>
+                </value>
+              </block>
+            </value>
+            <value name="FROM">
+              <shadow type="math_number" id="BQ3EV+7~C{Hs(VB_uIC0">
+                <field name="NUM">0</field>
+              </shadow>
+            </value>
+            <value name="TO">
+              <shadow type="math_number" id="AAl!JiC%2G:PRI%;lj`y">
+                <field name="NUM">911</field>
+              </shadow>
+            </value>
+            <statement name="DO">
+              <block type="setHTMLElemStyle" id="#~LojUx:L66ASnpocazd">
+                <field name="PROPERTY">display</field>
+                <field name="PARENT">FALSE</field>
+                <value name="VALUE">
+                  <block type="text" id="8L0N])rhSxz$)J4m]9;K">
+                    <field name="TEXT">block</field>
+                  </block>
+                </value>
+                <value name="ID">
+                  <block type="text" id="p~a$kJup_*Oc7I@6`[Ho">
+                    <field name="TEXT">popup</field>
+                  </block>
+                </value>
+              </block>
+            </statement>
+          </block>
+        </next>
+      </block>
+    </statement>
+  </block>
+</xml>

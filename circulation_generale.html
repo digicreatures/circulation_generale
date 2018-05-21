@@ -1,0 +1,55 @@
+<!--__VERGE3D_PLAYER__ - delete this comment if you want to edit the player's code-->
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <title>Circulation générale</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+
+  <script src="v3d.js"></script>
+  <script src="circulation_generale.js"></script>
+  <script>
+function displayVideo(url) {
+    var overlay = document.getElementById("overlay-panel");
+    overlay.innerHTML = '<div class="videoplayer"><div class="iconbar"><span onclick="hideVideo()" alt="Fermer">x</span></div><iframe width="100%" height="100%" src="' + url + '" frameborder="0" allowfullscreen></iframe><div>';
+    overlay.style.display = "block";
+}
+
+function hideVideo() {
+    var overlay = document.getElementById("overlay-panel");
+    overlay.innerHTML = "";
+    overlay.style.display = "none";
+}
+  </script>
+
+  <link rel="stylesheet" type="text/css" href="circulation_generale.css">
+</head>
+
+<body>
+  <div id="container"></div>
+  <div id="fullscreen_button" class="fullscreen-open" title="Toggle fullscreen mode"></div>
+  <div id="popup">
+      <section id="popup-quai" class="popup">
+        <div class="iconbar">
+            <img id="anim-quai" src="media/play.png" alt="animation" title="lancer l'animation">
+            <img onclick="displayVideo('https://www.youtube.com/embed/5zmgFSes9dc')" src="media/frame.png" alt="vidéo" title="afficher la vidéo">
+        </div>
+        <header class="noselect">Aire de mise à quai</header>
+      </section>
+      <section id="popup-parking-vl" class="popup">
+        <div class="iconbar"><img onclick="displayVideo('https://www.youtube.com/embed/yQXE29Ku0AY')" src="media/frame.png" alt="vidéo" title="afficher la vidéo"></div>
+        <header class="noselect">Parking VL</header>
+      </section>
+
+      <section id="popup-zone-dechets" class="popup">
+        <div class="iconbar"><img onclick="displayVideo('https://www.youtube.com/embed/yQXE29Ku0AY')" src="media/frame.png" alt="vidéo" title="afficher la vidéo"></div>
+        <header class="noselect">Zone déchets</header>
+      </section>
+  </div>
+
+  <div id="overlay-panel">
+  </div>
+</body>
+
+</html>
+

@@ -28,7 +28,7 @@ div#fullscreen_button {
 section.popup {
     position: absolute;
     top: -200px;
-    max-width: 80px;
+    max-width: 125px;
     width:auto;
 }
 

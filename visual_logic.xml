@@ -1,8 +1,12 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
   <variables>
     <variable type="" id="4V2nL5f06mcRIyBKG+c!">opacity</variable>
+    <variable type="" id="?N^5Y$;f]Wlf8?JO)ZKf">clioAnimationStart</variable>
+    <variable type="" id="_|T*iWxLgn6gH(l^|$48">semiAnimationStart</variable>
+    <variable type="" id="$TbMx8eDlcCt~#qGW6XA">camionBenneAnimationStart</variable>
+    <variable type="" id="ZqIHh6|6.@E%#ZhwkZ3I">benneAnimStartFrame</variable>
   </variables>
-  <block type="bindHTMLObject" id="4.{{*LLK83]:fxc]^B)r" x="-350" y="-870">
+  <block type="bindHTMLObject" id="4.{{*LLK83]:fxc]^B)r" x="-350" y="-1350">
     <field name="PARENT">FALSE</field>
     <value name="ID">
       <block type="text" id="JAxdFSb%.nn9dSX[Kn22">
@@ -45,10 +49,99 @@
       </block>
     </next>
   </block>
-  <block type="text" id="XS.uX_:sW/BcbzjufEjy" x="-213" y="-824">
-    <field name="TEXT">popup-quai</field>
+  <block type="eventHTMLElem" id=",d9u]At$aF0}7rDjgVE`" x="-350" y="-1210">
+    <field name="EVENT">click</field>
+    <field name="PARENT">FALSE</field>
+    <value name="ID">
+      <block type="text" id="CWoY=|X1RNJdi8+9(Ivu">
+        <field name="TEXT">vue-quai</field>
+      </block>
+    </value>
+    <statement name="DO">
+      <block type="tweenCameraExt" id="BeC(4q)%b(5`Uly)ZI0p">
+        <value name="POSITION">
+          <block type="objectList" id="%/.R8@uM!,~cchk=IRUm">
+            <field name="FIELDNAME">CAMERA-quai</field>
+          </block>
+        </value>
+        <value name="LOOKAT">
+          <block type="objectList" id="keP7B~~9NjAc_zt!aE~i">
+            <field name="FIELDNAME">ANCHOR-quai</field>
+          </block>
+        </value>
+        <value name="DURATION">
+          <shadow type="math_number" id="/WxPvK?7]4~mU-.:iT)Z">
+            <field name="NUM">3</field>
+          </shadow>
+        </value>
+      </block>
+    </statement>
   </block>
-  <block type="eventHTMLElem" id=";=XE#Y[O=z6?%?k[]TuV" x="-350" y="-730">
+  <block type="eventHTMLElem" id="AhSt!PHc*?9K68u6m|[e" x="-350" y="-1090">
+    <field name="EVENT">click</field>
+    <field name="PARENT">FALSE</field>
+    <value name="ID">
+      <block type="text" id="yIyOIhcIkKdt3AT*c!gr">
+        <field name="TEXT">vue-zone-dechets</field>
+      </block>
+    </value>
+    <statement name="DO">
+      <block type="tweenCameraExt" id="`#D5ewq59[:JllkmbPqZ">
+        <value name="POSITION">
+          <block type="objectList" id="y3Y$-}M?a@2|d|$V9{5h">
+            <field name="FIELDNAME">CAMERA-zonedechets</field>
+          </block>
+        </value>
+        <value name="LOOKAT">
+          <block type="objectList" id="7Z0:$+mzBX;^D8|z~o?{">
+            <field name="FIELDNAME">ANCHOR-zone_dechets</field>
+          </block>
+        </value>
+        <value name="DURATION">
+          <shadow type="math_number" id="2AI}tR~;=W8Ifz6ptp}J">
+            <field name="NUM">3</field>
+          </shadow>
+        </value>
+      </block>
+    </statement>
+  </block>
+  <block type="eventHTMLElem" id="F4wFT}3ccO|(|8m#=1Ja" x="-350" y="-990">
+    <field name="EVENT">click</field>
+    <field name="PARENT">FALSE</field>
+    <value name="ID">
+      <block type="text" id="[k)8+Io?UKedb}%;LMY*">
+        <field name="TEXT">vue-parking-vl</field>
+      </block>
+    </value>
+    <statement name="DO">
+      <block type="tweenCameraExt" id="g/#dAl=}:(!6%9:X[;Q?">
+        <value name="POSITION">
+          <block type="objectList" id="cq4Hy64d0pPkjt]q^t)m">
+            <field name="FIELDNAME">CAMERA-parkingvl</field>
+          </block>
+        </value>
+        <value name="LOOKAT">
+          <block type="objectList" id="l7jINGMA3dAbf|hUcR0y">
+            <field name="FIELDNAME">ANCHOR-parking_vl</field>
+          </block>
+        </value>
+        <value name="DURATION">
+          <shadow type="math_number" id="M`|S:Kyz;2L0W9+kW@J)">
+            <field name="NUM">3</field>
+          </shadow>
+        </value>
+      </block>
+    </statement>
+  </block>
+  <block type="variables_set" id="UgM=X?_ZJO({/Cz`E*5*" x="-350" y="-890">
+    <field name="VAR" id="_|T*iWxLgn6gH(l^|$48" variabletype="">semiAnimationStart</field>
+    <value name="VALUE">
+      <block type="logic_boolean" id="r6q/b6c?,--mxXV.VTy1">
+        <field name="BOOL">TRUE</field>
+      </block>
+    </value>
+  </block>
+  <block type="eventHTMLElem" id=";=XE#Y[O=z6?%?k[]TuV" x="-350" y="-830">
     <field name="EVENT">click</field>
     <field name="PARENT">FALSE</field>
     <value name="ID">
@@ -71,41 +164,417 @@
           </block>
         </value>
         <next>
-          <block type="playAnimationExt" id="FQTCZn]VT/xfAG,iAL)~">
-            <field name="REVERSED">FALSE</field>
-            <value name="VALUE">
-              <block type="getAnimations" id="o22BUn!$M12=zm%{.M.}">
-                <value name="OBJECTINPUT">
-                  <block type="groupList" id="r7LIK?W.$hBjmb}F0_XO">
-                    <field name="FIELDNAME">Group-semi-remorque</field>
-                  </block>
-                </value>
+          <block type="controls_ifelse" id="5(9qT;{AM1Yt1#$3[_W8">
+            <value name="IF0">
+              <block type="variables_get" id="DvdcI_!5C^AR,;!O5^p/">
+                <field name="VAR" id="_|T*iWxLgn6gH(l^|$48" variabletype="">semiAnimationStart</field>
               </block>
             </value>
-            <value name="FROM">
-              <shadow type="math_number" id="BQ3EV+7~C{Hs(VB_uIC0">
-                <field name="NUM">0</field>
-              </shadow>
-            </value>
-            <value name="TO">
-              <shadow type="math_number" id="AAl!JiC%2G:PRI%;lj`y">
-                <field name="NUM">911</field>
-              </shadow>
-            </value>
-            <statement name="DO">
-              <block type="setHTMLElemStyle" id="#~LojUx:L66ASnpocazd">
-                <field name="PROPERTY">display</field>
-                <field name="PARENT">FALSE</field>
+            <statement name="DO0">
+              <block type="playAnimationExt" id="FQTCZn]VT/xfAG,iAL)~">
+                <field name="REVERSED">FALSE</field>
                 <value name="VALUE">
-                  <block type="text" id="8L0N])rhSxz$)J4m]9;K">
-                    <field name="TEXT">block</field>
+                  <block type="getAnimations" id="o22BUn!$M12=zm%{.M.}">
+                    <value name="OBJECTINPUT">
+                      <block type="groupList" id="r7LIK?W.$hBjmb}F0_XO">
+                        <field name="FIELDNAME">Group-semi-remorque</field>
+                      </block>
+                    </value>
                   </block>
                 </value>
-                <value name="ID">
-                  <block type="text" id="p~a$kJup_*Oc7I@6`[Ho">
-                    <field name="TEXT">popup</field>
+                <value name="FROM">
+                  <shadow type="math_number" id="BQ3EV+7~C{Hs(VB_uIC0">
+                    <field name="NUM">0</field>
+                  </shadow>
+                </value>
+                <value name="TO">
+                  <shadow type="math_number" id="AAl!JiC%2G:PRI%;lj`y">
+                    <field name="NUM">784</field>
+                  </shadow>
+                </value>
+                <statement name="DO">
+                  <block type="variables_set" id="61LVcV6LEUquxFgYcCK#">
+                    <field name="VAR" id="_|T*iWxLgn6gH(l^|$48" variabletype="">semiAnimationStart</field>
+                    <value name="VALUE">
+                      <block type="logic_boolean" id="kDpIBZmWhKAVmY~i$8sv">
+                        <field name="BOOL">FALSE</field>
+                      </block>
+                    </value>
+                    <next>
+                      <block type="setHTMLElemStyle" id="#~LojUx:L66ASnpocazd">
+                        <field name="PROPERTY">display</field>
+                        <field name="PARENT">FALSE</field>
+                        <value name="VALUE">
+                          <block type="text" id="8L0N])rhSxz$)J4m]9;K">
+                            <field name="TEXT">block</field>
+                          </block>
+                        </value>
+                        <value name="ID">
+                          <block type="text" id="p~a$kJup_*Oc7I@6`[Ho">
+                            <field name="TEXT">popup</field>
+                          </block>
+                        </value>
+                      </block>
+                    </next>
+                  </block>
+                </statement>
+              </block>
+            </statement>
+            <statement name="ELSE">
+              <block type="playAnimationExt" id=",n303f=k~u^;L%))ql`A">
+                <field name="REVERSED">FALSE</field>
+                <value name="VALUE">
+                  <block type="getAnimations" id="8b*62egj!8^|3h4J6:am">
+                    <value name="OBJECTINPUT">
+                      <block type="groupList" id="6FWnv9KQk|_4J6uieZ$b">
+                        <field name="FIELDNAME">Group-semi-remorque</field>
+                      </block>
+                    </value>
                   </block>
                 </value>
+                <value name="FROM">
+                  <shadow type="math_number" id="`Or,R+}A]Wur?ong0=ZC">
+                    <field name="NUM">785</field>
+                  </shadow>
+                </value>
+                <value name="TO">
+                  <shadow type="math_number" id="sYtt3dgvZAu!O:mgxe]8">
+                    <field name="NUM">1505</field>
+                  </shadow>
+                </value>
+                <statement name="DO">
+                  <block type="variables_set" id="JCZAz5z!a,PymvvSKIgw">
+                    <field name="VAR" id="_|T*iWxLgn6gH(l^|$48" variabletype="">semiAnimationStart</field>
+                    <value name="VALUE">
+                      <block type="logic_boolean" id="Dnzq4Ah*a@3O9Q.:pl0%">
+                        <field name="BOOL">TRUE</field>
+                      </block>
+                    </value>
+                    <next>
+                      <block type="setHTMLElemStyle" id="hXhXOBe^#J;P!9f)3j?k">
+                        <field name="PROPERTY">display</field>
+                        <field name="PARENT">FALSE</field>
+                        <value name="VALUE">
+                          <block type="text" id="pfupr.05=S7i5#H|BiRJ">
+                            <field name="TEXT">block</field>
+                          </block>
+                        </value>
+                        <value name="ID">
+                          <block type="text" id="XY!:p90)hMdM6I5B$@l8">
+                            <field name="TEXT">popup</field>
+                          </block>
+                        </value>
+                      </block>
+                    </next>
+                  </block>
+                </statement>
+              </block>
+            </statement>
+          </block>
+        </next>
+      </block>
+    </statement>
+  </block>
+  <block type="variables_set" id="k#IESx@ilc@n,J8qL~,M" x="-350" y="-410">
+    <field name="VAR" id="?N^5Y$;f]Wlf8?JO)ZKf" variabletype="">clioAnimationStart</field>
+    <value name="VALUE">
+      <block type="logic_boolean" id="NpM5W~#NuWK$KsZ[#ifx">
+        <field name="BOOL">TRUE</field>
+      </block>
+    </value>
+  </block>
+  <block type="eventHTMLElem" id="cins*i90MJVnHAUZ2D!e" x="-350" y="-350">
+    <field name="EVENT">click</field>
+    <field name="PARENT">FALSE</field>
+    <value name="ID">
+      <block type="text" id="A25y|ph{QhOIT1@@7RWv">
+        <field name="TEXT">anim-parking-vl</field>
+      </block>
+    </value>
+    <statement name="DO">
+      <block type="setHTMLElemStyle" id="{28)7(u]CT$TjO]*;82H">
+        <field name="PROPERTY">display</field>
+        <field name="PARENT">FALSE</field>
+        <value name="VALUE">
+          <block type="text" id="wB/9@r/`ZsJb.hMu9_Kb">
+            <field name="TEXT">none</field>
+          </block>
+        </value>
+        <value name="ID">
+          <block type="text" id="fC-@OC(J4HSvyO4w^DjO">
+            <field name="TEXT">popup</field>
+          </block>
+        </value>
+        <next>
+          <block type="controls_ifelse" id="l4Sd/4H?htEf5!77}|tH">
+            <value name="IF0">
+              <block type="variables_get" id="]b|nr^{BnJu#N+muvGY[">
+                <field name="VAR" id="?N^5Y$;f]Wlf8?JO)ZKf" variabletype="">clioAnimationStart</field>
+              </block>
+            </value>
+            <statement name="DO0">
+              <block type="playAnimationExt" id="(ghvD#uwN=9Yq^h@UYMu">
+                <field name="REVERSED">FALSE</field>
+                <value name="VALUE">
+                  <block type="getAnimations" id="Le*jg@Rnhi!n@#1sMfV?">
+                    <value name="OBJECTINPUT">
+                      <block type="groupList" id="%Sb?8MVny6tHfMxX(Yo~">
+                        <field name="FIELDNAME">Group-clio</field>
+                      </block>
+                    </value>
+                  </block>
+                </value>
+                <value name="FROM">
+                  <shadow type="math_number" id="eK5}n5Zf9*)X;.WF%b@:">
+                    <field name="NUM">0</field>
+                  </shadow>
+                </value>
+                <value name="TO">
+                  <shadow type="math_number" id=";RqlHuN{PG?Nm$@I3~x)">
+                    <field name="NUM">729</field>
+                  </shadow>
+                </value>
+                <statement name="DO">
+                  <block type="variables_set" id="R0~-|DHQB6[a*DzmgQ8`">
+                    <field name="VAR" id="?N^5Y$;f]Wlf8?JO)ZKf" variabletype="">clioAnimationStart</field>
+                    <value name="VALUE">
+                      <block type="logic_boolean" id=".;h-ytX+1a|.b1$@lQj2">
+                        <field name="BOOL">FALSE</field>
+                      </block>
+                    </value>
+                    <next>
+                      <block type="setHTMLElemStyle" id="?KvKzXY1=aoU=G-{LeB!">
+                        <field name="PROPERTY">display</field>
+                        <field name="PARENT">FALSE</field>
+                        <value name="VALUE">
+                          <block type="text" id=",m^UIMSoQX`LrMNt,.B!">
+                            <field name="TEXT">block</field>
+                          </block>
+                        </value>
+                        <value name="ID">
+                          <block type="text" id="-X|)RZ:%|.,(G4Eh2cde">
+                            <field name="TEXT">popup</field>
+                          </block>
+                        </value>
+                      </block>
+                    </next>
+                  </block>
+                </statement>
+              </block>
+            </statement>
+            <statement name="ELSE">
+              <block type="playAnimationExt" id="Q/MNo{5I[su3rr8lgg|v">
+                <field name="REVERSED">FALSE</field>
+                <value name="VALUE">
+                  <block type="getAnimations" id="s#-Y:{k2Skz4fWm{7YS/">
+                    <value name="OBJECTINPUT">
+                      <block type="groupList" id="_UROQ$!UpeGWi8X~VbW|">
+                        <field name="FIELDNAME">Group-clio</field>
+                      </block>
+                    </value>
+                  </block>
+                </value>
+                <value name="FROM">
+                  <shadow type="math_number" id="xE;*`fYT%WYUtV@r/oXR">
+                    <field name="NUM">775</field>
+                  </shadow>
+                </value>
+                <value name="TO">
+                  <shadow type="math_number" id="qn=`:1VH/2#s1`_h8ikm">
+                    <field name="NUM">1205</field>
+                  </shadow>
+                </value>
+                <statement name="DO">
+                  <block type="variables_set" id="!p*KU_2^bk9yP_ND-AU7">
+                    <field name="VAR" id="?N^5Y$;f]Wlf8?JO)ZKf" variabletype="">clioAnimationStart</field>
+                    <value name="VALUE">
+                      <block type="logic_boolean" id="lGEy`;eXSNNVXR)W,b!M">
+                        <field name="BOOL">TRUE</field>
+                      </block>
+                    </value>
+                    <next>
+                      <block type="setHTMLElemStyle" id="kox:$u#pLe*?H]gop%mp">
+                        <field name="PROPERTY">display</field>
+                        <field name="PARENT">FALSE</field>
+                        <value name="VALUE">
+                          <block type="text" id="YT/Fv{+`-TO,wFLh)ceK">
+                            <field name="TEXT">block</field>
+                          </block>
+                        </value>
+                        <value name="ID">
+                          <block type="text" id="c~fC+nZrLkBiVW:XG97`">
+                            <field name="TEXT">popup</field>
+                          </block>
+                        </value>
+                      </block>
+                    </next>
+                  </block>
+                </statement>
+              </block>
+            </statement>
+          </block>
+        </next>
+      </block>
+    </statement>
+  </block>
+  <block type="variables_set" id="J_*jUGNO~gv@c7(g_REC" x="-350" y="50">
+    <field name="VAR" id="$TbMx8eDlcCt~#qGW6XA" variabletype="">camionBenneAnimationStart</field>
+    <value name="VALUE">
+      <block type="logic_boolean" id="HctT):L2ltNl9]Hq7gZ*">
+        <field name="BOOL">TRUE</field>
+      </block>
+    </value>
+    <next>
+      <block type="variables_set" id="6*HvIiyb!@1$g+j#5j[}">
+        <field name="VAR" id="ZqIHh6|6.@E%#ZhwkZ3I" variabletype="">benneAnimStartFrame</field>
+        <value name="VALUE">
+          <block type="math_number" id="DLFJ)5^zh]k{s1q!AskD">
+            <field name="NUM">19</field>
+          </block>
+        </value>
+      </block>
+    </next>
+  </block>
+  <block type="eventHTMLElem" id="_I5W1z%8,cwDa6GUeM7$" x="-350" y="130">
+    <field name="EVENT">click</field>
+    <field name="PARENT">FALSE</field>
+    <value name="ID">
+      <block type="text" id="r~yJA6Xu/EcZvG!@*?]8">
+        <field name="TEXT">anim-zone-dechets</field>
+      </block>
+    </value>
+    <statement name="DO">
+      <block type="setHTMLElemStyle" id="$_oyRP9J_cR0n[;zr(X7">
+        <field name="PROPERTY">display</field>
+        <field name="PARENT">FALSE</field>
+        <value name="VALUE">
+          <block type="text" id="K?2pkbxS,A-xP=KeCZA,">
+            <field name="TEXT">none</field>
+          </block>
+        </value>
+        <value name="ID">
+          <block type="text" id="FT$GIY9$uYAbc*Ey?qOJ">
+            <field name="TEXT">popup</field>
+          </block>
+        </value>
+        <next>
+          <block type="controls_ifelse" id="@*UQ}:L@=@r=NX]*[X%O">
+            <value name="IF0">
+              <block type="variables_get" id="ge!UO7wi4GAYMs#njWi]">
+                <field name="VAR" id="$TbMx8eDlcCt~#qGW6XA" variabletype="">camionBenneAnimationStart</field>
+              </block>
+            </value>
+            <statement name="DO0">
+              <block type="playAnimationExt" id="T9|uq?Nq:`*rl0Rp|lZg">
+                <field name="REVERSED">FALSE</field>
+                <value name="VALUE">
+                  <block type="getAnimations" id="%k+Tbo(/n;=#RYVeZ)1a">
+                    <value name="OBJECTINPUT">
+                      <block type="groupList" id="m(:~?~^Fff;m[)OKl]Sg">
+                        <field name="FIELDNAME">Group-camion.benne</field>
+                      </block>
+                    </value>
+                  </block>
+                </value>
+                <value name="FROM">
+                  <shadow type="math_number" id="~csVgwD1ywPKe+Qtap4I">
+                    <field name="NUM">0</field>
+                  </shadow>
+                  <block type="variables_get" id="gTQ1xyG/EH?Bi;BV6f`h">
+                    <field name="VAR" id="ZqIHh6|6.@E%#ZhwkZ3I" variabletype="">benneAnimStartFrame</field>
+                  </block>
+                </value>
+                <value name="TO">
+                  <shadow type="math_number" id="#RJg2Z]E(A(;#7vf9+}t">
+                    <field name="NUM">1842</field>
+                  </shadow>
+                </value>
+                <statement name="DO">
+                  <block type="variables_set" id="(D/MrtNbvL2KWHG){fz|">
+                    <field name="VAR" id="ZqIHh6|6.@E%#ZhwkZ3I" variabletype="">benneAnimStartFrame</field>
+                    <value name="VALUE">
+                      <block type="math_number" id="H)aB@Gb??W~Dp9uC80`{">
+                        <field name="NUM">1</field>
+                      </block>
+                    </value>
+                    <next>
+                      <block type="variables_set" id="hs`R4|xK8Ww,y3znA8_^">
+                        <field name="VAR" id="$TbMx8eDlcCt~#qGW6XA" variabletype="">camionBenneAnimationStart</field>
+                        <value name="VALUE">
+                          <block type="logic_boolean" id=",]R1MHHbe8i20Tz^S.Tw">
+                            <field name="BOOL">FALSE</field>
+                          </block>
+                        </value>
+                        <next>
+                          <block type="setHTMLElemStyle" id="U@jF`|{h,[eTQfl{D;zs">
+                            <field name="PROPERTY">display</field>
+                            <field name="PARENT">FALSE</field>
+                            <value name="VALUE">
+                              <block type="text" id="te[0[b[$6~zX}|J754Nt">
+                                <field name="TEXT">block</field>
+                              </block>
+                            </value>
+                            <value name="ID">
+                              <block type="text" id="Sa5m3NGEiu=Y+0^1Ky-%">
+                                <field name="TEXT">popup</field>
+                              </block>
+                            </value>
+                          </block>
+                        </next>
+                      </block>
+                    </next>
+                  </block>
+                </statement>
+              </block>
+            </statement>
+            <statement name="ELSE">
+              <block type="playAnimationExt" id="n5%IHo*rCX6LLY0xrSem">
+                <field name="REVERSED">FALSE</field>
+                <value name="VALUE">
+                  <block type="getAnimations" id=")^kb:K#F=Z8g}_;_o]3L">
+                    <value name="OBJECTINPUT">
+                      <block type="groupList" id=":H?5ETd6W@6B5MHGiLe(">
+                        <field name="FIELDNAME">Group-camion.benne</field>
+                      </block>
+                    </value>
+                  </block>
+                </value>
+                <value name="FROM">
+                  <shadow type="math_number" id="-t2W.bFx!D}1nL}JlV;!">
+                    <field name="NUM">1843</field>
+                  </shadow>
+                </value>
+                <value name="TO">
+                  <shadow type="math_number" id=".woM?ts+(xen[o6am5+t">
+                    <field name="NUM">2255</field>
+                  </shadow>
+                </value>
+                <statement name="DO">
+                  <block type="variables_set" id="elE?3k-(]zhT$!tL9D/S">
+                    <field name="VAR" id="$TbMx8eDlcCt~#qGW6XA" variabletype="">camionBenneAnimationStart</field>
+                    <value name="VALUE">
+                      <block type="logic_boolean" id="a+CqUTu4F[{X$!qQq2ld">
+                        <field name="BOOL">TRUE</field>
+                      </block>
+                    </value>
+                    <next>
+                      <block type="setHTMLElemStyle" id="n{*Q#d,mz]JAFpmn4$2]">
+                        <field name="PROPERTY">display</field>
+                        <field name="PARENT">FALSE</field>
+                        <value name="VALUE">
+                          <block type="text" id="GPGawH(W#xX{L(}Hwy9%">
+                            <field name="TEXT">block</field>
+                          </block>
+                        </value>
+                        <value name="ID">
+                          <block type="text" id="^Vn,qR6;oSvcV=C2c4(e">
+                            <field name="TEXT">popup</field>
+                          </block>
+                        </value>
+                      </block>
+                    </next>
+                  </block>
+                </statement>
               </block>
             </statement>
           </block>

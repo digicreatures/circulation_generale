@@ -3,6 +3,16 @@
  */
 'use strict';
 
+function displayVideo(url) {
+    document.getElementById("iframe-video").src = url;
+    document.getElementById("hud").className="video-mode";
+}
+
+function hideVideo() {
+    document.getElementById("hud").className = "";
+    document.getElementById("iframe-video").src = "";
+}
+
 window.addEventListener('load', function() {
 
 
@@ -126,7 +136,8 @@ function prepareExternalInterface(app) {
 }
 
 function runCode() {
-    // add your code here, e.g. console.log('Hello, World!');
+
+    document.getElementById("hud").className = "";
 
 }
 

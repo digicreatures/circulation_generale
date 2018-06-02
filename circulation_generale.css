@@ -1,4 +1,5 @@
 body {
+    font-size: 10pt;
     font-family: sans-serif;
     background-color: #FFF;
     margin: 0px;
@@ -13,28 +14,61 @@ body {
     height: 100%;
 }
 
+#hud.hidden {
+    display: none;
+}
+
+#hud.animation-mode #popups {
+  display: none;
+}
+
+#hud.help-mode #buttons {
+  display: none;
+}
+
+#hud.help-mode #help {
+  top: -5px;
+}
+
+#hud.video-mode #buttons {
+  display: none;
+}
+
+#hud.video-mode #video {
+  display: block;
+}
+
 div#fullscreen_button {
     position: absolute;
     top: 10px;
     right: 10px;
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
     cursor: pointer;
     background-size: 100% 100%;
     z-index: 110;
-    display: none;
+}
+
+div#help_button {
+    position: absolute;
+    top: 60px;
+    right: 10px;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    background-size: 100% 100%;
+    z-index: 110;
+    background-image: url('media/icon_help.png');
 }
 
 section.popup {
     position: absolute;
-    top: -200px;
     max-width: 125px;
     width:auto;
 }
 
 section.popup header {
     display: inline-block;
-    font-size: 10pt;
     border: solid white 1px;
     border-radius: 5px;
     background-color: #000000A0;
@@ -45,8 +79,8 @@ section.popup header {
 }
 
 @media all and (max-width: 1024px) {
-    section.popup header{
-        font-size: .9vw;
+    body {
+        font-size: 1.2vw;
     }
 }
 
@@ -55,18 +89,21 @@ section.popup .iconbar img {
     cursor: pointer;
 }
 
-#overlay-panel {
-    background-color: #000000AA;
+.overlay {
+    z-index: 150;
     position: absolute;
-    z-index: 120;
     top: 0px;
     left: 0px;
     width: 100%;
     height: 100%;
+}
+
+#video.overlay {
+    background-color: #000000AA;
     display:none;
 }
 
-#overlay-panel .videoplayer {
+#video .videoplayer {
     position: fixed;
     top: 50%;
     left: 50%;
@@ -80,12 +117,53 @@ section.popup .iconbar img {
     margin-top: -30vh;
 }
 
-#overlay-panel .iconbar {
+#video .iconbar {
     font-size: 24pt;
     color: white;
     cursor: pointer;
     text-align: right;
     margin-top: -2em;
+}
+
+#help.overlay {
+    position: absolute;
+    top: -100%;
+    left: 0px;
+    width: 40%;
+    margin-left: 30%;
+    height: 45%;
+    padding-bottom: 4em;
+    border-radius: 0px 0px 15px 15px;
+    border: 5px solid #FFFFFF;
+    background-color: #FFFFFFE0;
+    color: black;
+    -webkit-transition: top 1s; /* Safari */
+    transition: top 1s;
+}
+
+#help .content {
+    height: 100%;
+    overflow-y: auto;
+}
+
+#help .content p {
+  clear: both;
+  margin: 2em;
+}
+
+#help .content img {
+  float: left;
+  padding-right: 1.5em;
+  padding-bottom: 1.5em;
+}
+
+#help .buttonbar {
+  padding-top: 1em;
+  text-align: center;
+}
+
+#help .buttonbar button {
+  padding: .2em 1em .2em 1em;
 }
 
 .noselect {

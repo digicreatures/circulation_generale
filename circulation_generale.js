@@ -3,14 +3,22 @@
  */
 'use strict';
 
+function setHudMode(mode) {
+  document.getElementById("hud").className= mode + "-mode";
+}
+
+function resetHudMode() {
+  document.getElementById("hud").className= "";
+}
+
 function displayVideo(url) {
     document.getElementById("iframe-video").src = url;
-    document.getElementById("hud").className="video-mode";
+    setHudMode("video");
 }
 
 function hideVideo() {
-    document.getElementById("hud").className = "";
     document.getElementById("iframe-video").src = "";
+    resetHudMode();
 }
 
 window.addEventListener('load', function() {
@@ -128,17 +136,11 @@ function initFullScreen() {
 }
 
 function prepareExternalInterface(app) {
-    // register functions in the app.ExternalInterface to call them from Puzzles, e.g:
-    // app.ExternalInterface.myJSFunction = function() {
-    //     console.log('Hello, World!');
-    // }
-
+    app.ExternalInterface.setHudMode = setHudMode
 }
 
 function runCode() {
-
-    document.getElementById("hud").className = "";
-
+    setHudMode("animation");
 }
 
 });

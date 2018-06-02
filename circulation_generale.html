@@ -47,7 +47,7 @@
         </p>
       </div>
       <div class="buttonbar">
-        <button onclick="document.getElementById('hud').className=''">Ok</button>
+        <button onclick="resetHudMode()">Ok</button>
       </div>
     </div>
 
@@ -60,7 +60,7 @@
 
     <div id="buttons">
       <div id="fullscreen_button" class="fullscreen-open" title="entrer/sortir du mode plein-écran"></div>
-      <div id="help_button" title="aide" onclick="document.getElementById('hud').className='help-mode'"></div>
+      <div id="help_button" title="aide" onclick="setHudMode('help')"></div>
 
       <div id="popups">
         <section id="popup-quai" class="popup">

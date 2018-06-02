@@ -5,44 +5,85 @@
     <variable type="" id="$TbMx8eDlcCt~#qGW6XA">camionBenneAnimationStart</variable>
     <variable type="" id="ZqIHh6|6.@E%#ZhwkZ3I">benneAnimStartFrame</variable>
   </variables>
-  <block type="bindHTMLObject" id="4.{{*LLK83]:fxc]^B)r" x="-350" y="-1350">
-    <field name="PARENT">FALSE</field>
-    <value name="ID">
-      <block type="text" id="JAxdFSb%.nn9dSX[Kn22">
-        <field name="TEXT">popup-quai</field>
+  <block type="tweenCameraExt" id="ChwI|!kXIj^.L3MXwGi}" x="-350" y="-1490">
+    <value name="POSITION">
+      <block type="objectList" id="7KG3jWZ/]EqoYu{0[^+i">
+        <field name="FIELDNAME">CAMERA-start</field>
       </block>
     </value>
-    <value name="OBJECTINPUT">
-      <block type="objectList" id="`O9iB[MQuqBhpc,#+*U)">
-        <field name="FIELDNAME">ANCHOR-quai</field>
+    <value name="LOOKAT">
+      <block type="objectList" id="M-[e-?|9^9x|p|=tALhz">
+        <field name="FIELDNAME">ANCHOR-start</field>
       </block>
+    </value>
+    <value name="DURATION">
+      <shadow type="math_number" id="bPk)1*0V09zh20OAbb{v">
+        <field name="NUM">3</field>
+      </shadow>
     </value>
     <next>
-      <block type="bindHTMLObject" id="bw|0Q%qjb!:=as[(S5@E">
-        <field name="PARENT">FALSE</field>
-        <value name="ID">
-          <block type="text" id="}*l6W=`Fmpp12oFp`N(h">
-            <field name="TEXT">popup-parking-vl</field>
-          </block>
+      <block type="setTimeout" id="Y4PnX?0c;v6vKPuh4jkH">
+        <value name="VALUE">
+          <shadow type="math_number" id="]#4_A]R*F3r-T7sI*,Vr">
+            <field name="NUM">2</field>
+          </shadow>
         </value>
-        <value name="OBJECTINPUT">
-          <block type="objectList" id="%D.F%=zp+jJpV*[O0TR}">
-            <field name="FIELDNAME">ANCHOR-parking_vl</field>
+        <statement name="DO">
+          <block type="callJSFunction" id="]2Mxm{=v.WGkFlPt3lwY">
+            <mutation name="setHudMode">
+              <arg name="mode"></arg>
+            </mutation>
+            <field name="NAME">setHudMode</field>
+            <value name="ARG0">
+              <block type="text" id="Cu9Hm`0,T.7_q[O-LuJj">
+                <field name="TEXT">help</field>
+              </block>
+            </value>
           </block>
-        </value>
+        </statement>
         <next>
-          <block type="bindHTMLObject" id="W})-^J*-?/s^|;78op#5">
+          <block type="bindHTMLObject" id="4.{{*LLK83]:fxc]^B)r">
             <field name="PARENT">FALSE</field>
             <value name="ID">
-              <block type="text" id="WWAtN%VZ*`V$SGM!g|kl">
-                <field name="TEXT">popup-zone-dechets</field>
+              <block type="text" id="JAxdFSb%.nn9dSX[Kn22">
+                <field name="TEXT">popup-quai</field>
               </block>
             </value>
             <value name="OBJECTINPUT">
-              <block type="objectList" id="29.vh~$L?=RX:snC/[OP">
-                <field name="FIELDNAME">ANCHOR-zone_dechets</field>
+              <block type="objectList" id="`O9iB[MQuqBhpc,#+*U)">
+                <field name="FIELDNAME">ANCHOR-quai</field>
               </block>
             </value>
+            <next>
+              <block type="bindHTMLObject" id="bw|0Q%qjb!:=as[(S5@E">
+                <field name="PARENT">FALSE</field>
+                <value name="ID">
+                  <block type="text" id="}*l6W=`Fmpp12oFp`N(h">
+                    <field name="TEXT">popup-parking-vl</field>
+                  </block>
+                </value>
+                <value name="OBJECTINPUT">
+                  <block type="objectList" id="%D.F%=zp+jJpV*[O0TR}">
+                    <field name="FIELDNAME">ANCHOR-parking_vl</field>
+                  </block>
+                </value>
+                <next>
+                  <block type="bindHTMLObject" id="W})-^J*-?/s^|;78op#5">
+                    <field name="PARENT">FALSE</field>
+                    <value name="ID">
+                      <block type="text" id="WWAtN%VZ*`V$SGM!g|kl">
+                        <field name="TEXT">popup-zone-dechets</field>
+                      </block>
+                    </value>
+                    <value name="OBJECTINPUT">
+                      <block type="objectList" id="29.vh~$L?=RX:snC/[OP">
+                        <field name="FIELDNAME">ANCHOR-zone_dechets</field>
+                      </block>
+                    </value>
+                  </block>
+                </next>
+              </block>
+            </next>
           </block>
         </next>
       </block>

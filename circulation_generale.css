@@ -71,7 +71,8 @@ section.popup header {
     display: inline-block;
     border: solid white 1px;
     border-radius: 5px;
-    background-color: #000000A0;
+    background-color: #000000;
+    background-color: #000000AA;
     color: white;
     width: 12em;
     text-align: center;
@@ -84,7 +85,7 @@ section.popup header {
     }
 }
 
-section.popup .iconbar img {
+.iconbar img {
     padding-left: 5px;
     cursor: pointer;
 }
@@ -118,11 +119,8 @@ section.popup .iconbar img {
 }
 
 #video .iconbar {
-    font-size: 24pt;
-    color: white;
-    cursor: pointer;
     text-align: right;
-    margin-top: -2em;
+    margin-top: -30px;
 }
 
 #help.overlay {
@@ -136,6 +134,7 @@ section.popup .iconbar img {
     padding-bottom: 4em;
     border-radius: 0px 0px 15px 15px;
     border: 5px solid #FFFFFF;
+    background-color: #FFFFFF;
     background-color: #FFFFFFF0;
     color: black;
     -webkit-transition: top 1s; /* Safari */
